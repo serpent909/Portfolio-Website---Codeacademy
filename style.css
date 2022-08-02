@@ -1,31 +1,60 @@
-
 /*body*/
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-container {
+  max-width: 70%;
+  padding-bottom: 100px;
+  margin: 0 auto;
+}
+
 body {
+  margin: 0;
   background-color: #FDEE8A;
   font-family: 'Arial', sans-serif;
-  margin: 0;
+  min-width: 500px;
 }
 
 h1 {
   font-size: 2.5em;
   font-weight: bold;
+  white-space: nowrap;
   margin: 0;
-  padding: 0;
+  padding: 20px
 }
 
 h2 {
   font-size: 2em;
   font-weight: bold;
-  margin: 20px;
-  padding: 20px;
+  text-align: center;
 }
 
+h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+}
 
 header {
   background-color: #FD6C65;
   color: #fff;
-  padding: 20px;
+  padding: 0;
+  margin: 0;
   text-align: center;
+}
+
+.navigation {
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 /*Navigation Bar*/
@@ -33,12 +62,12 @@ header {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  width:100%;
-  margin:0;
+  width: 100%;
+  margin: 0;
 }
 
 .navigation-item {
-  font-size: 20px;
+  font-size: 1.5em;
   font-weight: bold;
   color: #fff;
   cursor: pointer;
@@ -66,25 +95,67 @@ nav li a:hover {
 /*Welcome Content*/
 .container-welcome {
   padding: 20px;
+  margin: 50px auto;
   border-radius: 5px;
-  margin: 0 auto;
-  width: 50%;
+  border: #13273a solid 1px;
+}
+
+.container-projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 5px;
+  border: #13273a solid 1px;
+}
+
+.column-3 {
+  padding: 20px;
+  margin: 20px;
+  min-height: 200px;
+  min-width: 200px;
   text-align: center;
 }
 
-.container-welcome p {
-  font-size: 1.5em;
-  text-align: left;
+.project-1 {
+  background-color: white;
 }
+
+.project-2 {
+  background-color: #209BFF;
+}
+
+.project-3 {
+  background-color: white;
+}
+
+.project-1:hover {
+  background-color: #13273a;
+  color: #fff;
+}
+
+.project-2:hover {
+  background-color: #13273a;
+  color: #fff;
+}
+
+.project-3:hover {
+  background-color: #13273a;
+  color: #fff;
+}
+
 
 /*Footer*/
 footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1em;
   background-color: #13273a;
   color: #fff;
-  text-align: center;
-  position: absolute;
   width: 100%;
-  bottom: 0;
+  height: 100px;
+  position: absolute;
+  bottom: 0px;
+  
 }
-
