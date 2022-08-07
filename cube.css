@@ -1,6 +1,6 @@
-/* * {
+* {
     box-sizing: border-box;
-} */
+}
 
 .cube-container {
     width: 200px;
@@ -26,8 +26,9 @@
     line-height: 200px;
     font-size: 40px;
     font-weight: bold;
-    color: white;
     text-align: center;
+    border: 5px solid rgb(46, 46, 46);
+    border-radius: 20px;
 
 }
 
@@ -56,25 +57,25 @@
 }
 
 .cube-face-front {
-    transform: rotateY(0deg) translateZ(100px);
+    transform: rotateY(0deg) translateZ(99px);
 }
 
 .cube-face-right {
-    transform: rotateY(90deg) translateZ(100px);
+    transform: rotateY(90deg) translateZ(99px);
 }
 
 .cube-face-back {
-    transform: rotateY(180deg) translateZ(100px);
+    transform: rotateY(180deg) translateZ(99px);
 }
 
 .cube-face-left {
-    transform: rotateY(-90deg) translateZ(100px);
+    transform: rotateY(-90deg) translateZ(99px);
 }
 
 .cube-face-top {
-    transform: rotateX(90deg) translateZ(100px);
+    transform: rotateX(90deg) translateZ(99px);
 }
 
 .cube-face-bottom {
-    transform: rotateX(-90deg) translateZ(100px);
+    transform: rotateX(-90deg) translateZ(99px);
 }
