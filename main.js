@@ -5,7 +5,7 @@ window.addEventListener('load', function () {
     
     button.addEventListener('click', function () {
         if (!buttonState) {
-        document.body.style.backgroundColor = 'peachpuff';
+        document.body.style.backgroundColor = 'darkgrey';
         buttonState = true;
         } else {
         document.body.style.backgroundColor = '';

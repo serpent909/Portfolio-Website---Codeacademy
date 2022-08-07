@@ -37,10 +37,22 @@ h3 {
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 1.4em;
   line-height: 1.5em;
   margin: 0;
   padding: 0;
+}
+
+#btn {
+  background-color:#FD6C65;
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
 }
 
 header {
@@ -115,6 +127,8 @@ nav li a:hover {
   min-height: 200px;
   min-width: 200px;
   text-align: center;
+
+
 }
 
 .project-1 {
