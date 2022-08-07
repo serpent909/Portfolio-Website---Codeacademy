@@ -1,13 +1,13 @@
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
 
 .cube-container {
     width: 200px;
     height: 200px;
     margin: 80px;
     perspective: 700px;
-    margin: 100px auto;
+    margin: 80px auto;
 }
 
 .cube {
