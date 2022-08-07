@@ -1,6 +1,6 @@
 window.addEventListener('load', function () {
 
-    const button = document.getElementById("btn");
+    const button = document.getElementById("theme-btn");
     let buttonState = false;
     
     button.addEventListener('click', function () {

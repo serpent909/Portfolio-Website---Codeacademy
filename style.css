@@ -2,12 +2,18 @@
 .page-container {
   position: relative;
   min-height: 100vh;
+
 }
 
 .content-container {
   max-width: 70%;
   padding-bottom: 100px;
   margin: 0 auto;
+  max-width: 700px;
+}
+
+#button-container {
+  text-align: center;
 }
 
 body {
@@ -43,7 +49,7 @@ p {
   padding: 0;
 }
 
-#btn {
+button {
   background-color:#FD6C65;
   border: none;
   color: white;
@@ -52,7 +58,6 @@ p {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-
 }
 
 header {
@@ -113,7 +118,7 @@ nav li a:hover {
 }
 
 .container-projects {
-  display: flex;
+  /* display: flex; */
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
