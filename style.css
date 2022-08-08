@@ -4,11 +4,6 @@
 
 }
 
-span {
-  padding: 0px;
-  margin-top: 2px;
-}
-
 .content-container {
   max-width: 70%;
   margin: 0 auto;
@@ -22,7 +17,7 @@ span {
 
 body {
   margin: 0;
-  background-color: #FDEE8A;
+  background-color: #E8F7EE;
   font-family: 'Arial', sans-serif;
   min-width: 500px;
 }
@@ -54,7 +49,7 @@ p {
 }
 
 button {
-  background-color:#FD6C65;
+  background-color:#b10f2d;
   border: none;
   color: white;
   padding: 12px 24px;
@@ -65,7 +60,7 @@ button {
 }
 
 header {
-  background-color: #FD6C65;
+  background-color: #b10f2d;
   color: #fff;
   padding: 0;
   margin: 0;
@@ -95,7 +90,7 @@ header {
 nav ul {
   list-style-type: none;
   padding: 0;
-  background-color: #13273a;
+  background-color: #26547C;
 }
 
 nav li a {
@@ -171,7 +166,7 @@ footer {
   align-items: center;
   justify-content: center;
   font-size: 1em;
-  background-color: #13273a;
+  background-color: #26547C;
   color: #fff;
   width: 100%;
   height: 100px;
