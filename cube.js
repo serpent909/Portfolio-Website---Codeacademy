@@ -13,6 +13,8 @@ window.addEventListener('load', function () {
 
     let currentPos = posFront;
 
+    
+
     const changePosition = () => {
 
         const randomPos = Math.floor(Math.random() * 6);
@@ -72,5 +74,7 @@ window.addEventListener('load', function () {
 
     randomFace.addEventListener('click', changePosition);
     randomAngle.addEventListener('click', changeAngle);
+    
+    changeAngle();
 
 });
