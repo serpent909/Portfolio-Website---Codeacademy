@@ -121,6 +121,10 @@ body.dark-theme .navigation-item {
   color: #fff;
 }
 
+body.dark-theme nav li a {
+  color: #fff;
+}
+
 nav ul {
   list-style-type: none;
   padding: 0;
@@ -137,9 +141,6 @@ nav li a {
   text-decoration: none;
 }
 
-body.dark-theme nav li a {
-  color: #fff;
-}
 
 /* Change the link color on hover */
 nav li a:hover {
@@ -149,7 +150,7 @@ nav li a:hover {
 
 body.dark-theme nav li a:hover {
   background-color: #fff;
-  color: #26547c;
+  color:#26547c !important;
 }
 
 /*Welcome Content*/
