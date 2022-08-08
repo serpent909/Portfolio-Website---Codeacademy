@@ -1,19 +1,7 @@
 /*body*/
 .page-container {
   position: relative;
-
 }
-
-.content-container {
-  max-width: 70%;
-  margin: 0 auto;
-  max-width: 700px;
-}
-
-#button-container {
-  text-align: center;
-}
-
 
 body {
   margin: 0;
@@ -24,6 +12,10 @@ body {
 
 body.dark-theme {
   background-color: #2c3e50;
+}
+
+p, h1, h2, h3, button, nav li a {
+  color: rgb(35, 35, 35);
 }
 
 h1 {
@@ -43,10 +35,6 @@ h2 {
 h3 {
   font-size: 1.5em;
   font-weight: bold;
-}
-
-p, h1, h2, h3, button, nav li a {
-  color: rgb(35, 35, 35);
 }
 
 body.dark-theme h1 {
@@ -73,7 +61,7 @@ p {
 }
 
 button {
-  background-color:#b10f2d;
+  background-color: #b10f2d;
   border: none;
   padding: 12px 24px;
   text-align: center;
@@ -141,8 +129,6 @@ nav li a {
   text-decoration: none;
 }
 
-
-/* Change the link color on hover */
 nav li a:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
@@ -150,15 +136,14 @@ nav li a:hover {
 
 body.dark-theme nav li a:hover {
   background-color: #fff;
-  color:#26547c !important;
+  color: #26547c;
 }
 
-/*Welcome Content*/
+/*Containers*/
 .container-welcome {
   padding: 20px;
   margin: 40px auto;
   border-radius: 5px;
-
 }
 
 .container-projects {
@@ -168,7 +153,16 @@ body.dark-theme nav li a:hover {
   justify-content: center; */
   margin-top: 70px;
   border-radius: 5px;
+}
 
+.content-container {
+  max-width: 70%;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+#button-container {
+  text-align: center;
 }
 
 .column-3 {
@@ -179,7 +173,7 @@ body.dark-theme nav li a:hover {
   text-align: center;
 }
 
-.project-1 {
+/* .project-1 {
   background-color: white;
 }
 
@@ -204,8 +198,7 @@ body.dark-theme nav li a:hover {
 .project-3:hover {
   background-color: #13273a;
   color: #fff;
-}
-
+} */
 
 /*Footer*/
 footer {
@@ -219,7 +212,6 @@ footer {
   height: 100px;
   position: absolute;
   bottom: 0px;
-  
 }
 
 body.dark-theme footer {
