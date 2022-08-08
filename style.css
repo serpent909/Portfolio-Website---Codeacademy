@@ -45,8 +45,8 @@ h3 {
   font-weight: bold;
 }
 
-p, h1, h2, h3 {
-  color: #000;
+p, h1, h2, h3, button, nav li a {
+  color: rgb(35, 35, 35);
 }
 
 body.dark-theme h1 {
@@ -133,7 +133,6 @@ body.dark-theme nav ul {
 
 nav li a {
   display: block;
-  color: #000;
   padding: 8px 16px;
   text-decoration: none;
 }
@@ -146,6 +145,11 @@ body.dark-theme nav li a {
 nav li a:hover {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
+}
+
+body.dark-theme nav li a:hover {
+  background-color: #fff;
+  color: #26547c;
 }
 
 /*Welcome Content*/
