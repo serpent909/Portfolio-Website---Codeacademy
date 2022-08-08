@@ -6,5 +6,4 @@ window.addEventListener('load', function () {
         document.body.classList.toggle('dark-theme');
 
     });
-
 });

@@ -13,8 +13,6 @@ window.addEventListener('load', function () {
 
     let currentPos = posFront;
 
-    
-
     const changePosition = () => {
 
         const randomPos = Math.floor(Math.random() * 6);
@@ -69,12 +67,11 @@ window.addEventListener('load', function () {
         let rotateY = Math.floor(Math.random() * 360);
         let rotateZ = Math.floor(Math.random() * 360);
         cubeFaces.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) rotateZ(${rotateZ}deg)`;
-
     }
 
     randomFace.addEventListener('click', changePosition);
     randomAngle.addEventListener('click', changeAngle);
-    
+
     changeAngle();
 
 });
