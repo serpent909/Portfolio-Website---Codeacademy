@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+.cube-perspective {
+    perspective: 500px;
+
+}
+
 .cube-container {
     width: 200px;
     height: 200px;

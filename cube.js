@@ -73,9 +73,10 @@ window.addEventListener('load', function () {
 
 
     const changeAngle2 = (x,y) => {
-        let rotateY = x/5;
-        let rotateX = y/5;
-        cubeContainer.style.transform = `rotateY(${rotateY}deg) rotateX(${rotateX}deg)`;
+        let rotateY = x;
+        let rotateX = y;
+        let rotateZ = Math.sqrt(x*x + y*y);
+        cubeContainer.style.transform = `rotateY(${rotateY}deg) rotateX(${-rotateX}deg)`;
         
     }
 
@@ -83,8 +84,11 @@ window.addEventListener('load', function () {
         let initialX = event.clientX;
         let initialY = event.clientY;
 
+
         this.document.onmousemove = (event) => {
-            changeAngle2((initialX + event.clientX), (initialY - event.clientY));
+            let changeX = initialX + event.clientX;
+            let changeY = initialY - event.clientY;
+            changeAngle2((changeX),(-changeY));
         }
     })
 
