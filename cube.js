@@ -1,6 +1,8 @@
 window.addEventListener('load', function () {
 
+
     let cubeFaces = document.querySelector(".cube");
+    let cubeContainer = document.querySelector(".cube-container");
     let randomFace = document.getElementById("cube-btn-random-face");
     let randomAngle = document.getElementById("cube-btn-random-angle");
 
@@ -68,6 +70,27 @@ window.addEventListener('load', function () {
         let rotateZ = Math.floor(Math.random() * 360);
         cubeFaces.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) rotateZ(${rotateZ}deg)`;
     }
+
+
+    const changeAngle2 = (x,y) => {
+        let rotateY = x/5;
+        let rotateX = y/5;
+        cubeContainer.style.transform = `rotateY(${rotateY}deg) rotateX(${rotateX}deg)`;
+        
+    }
+
+    document.querySelector('body').addEventListener('mousedown', (event) => {
+        let initialX = event.clientX;
+        let initialY = event.clientY;
+
+        this.document.onmousemove = (event) => {
+            changeAngle2((initialX + event.clientX), (initialY - event.clientY));
+        }
+    })
+
+    document.addEventListener('mouseup', (event) => {
+        this.document.onmousemove = null;
+    });
 
     randomFace.addEventListener('click', changePosition);
     randomAngle.addEventListener('click', changeAngle);

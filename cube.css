@@ -6,8 +6,8 @@
     width: 200px;
     height: 200px;
     margin: 80px;
-    perspective: 700px;
     margin: 100px auto;
+    transform-style: preserve-3d;
 }
 
 .cube {
