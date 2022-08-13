@@ -68,18 +68,19 @@ window.addEventListener('load', function () {
         let rotateX = Math.floor(Math.random() * 360);
         let rotateY = Math.floor(Math.random() * 360);
         let rotateZ = Math.floor(Math.random() * 360);
-        cubeFaces.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) rotateZ(${rotateZ}deg)`;
+        cubeFaces.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
     }
 
 
-    const changeAngle2 = (x,y) => {
+    const changeAngle2 = (x, y) => {
         let rotateY = x;
         let rotateX = y;
-        let rotateZ = Math.sqrt(x*x + y*y);
-        cubeContainer.style.transform = `rotateY(${rotateY}deg) rotateX(${-rotateX}deg)`;
-        
+        let rotateZ = x/y;
+        cubeContainer.style.transform = `rotateX(${-rotateX}deg) rotateY(${rotateY}deg)`;
+
     }
 
+    // event listeners for desktop
     document.querySelector('body').addEventListener('mousedown', (event) => {
         let initialX = event.clientX;
         let initialY = event.clientY;
@@ -88,7 +89,7 @@ window.addEventListener('load', function () {
         this.document.onmousemove = (event) => {
             let changeX = initialX + event.clientX;
             let changeY = initialY - event.clientY;
-            changeAngle2((changeX),(-changeY));
+            changeAngle2((changeX), (-changeY));
         }
     })
 
@@ -96,12 +97,7 @@ window.addEventListener('load', function () {
         this.document.onmousemove = null;
     });
 
-
-
-
-
-
-
+    // event listeners for mobile
     document.querySelector('body').addEventListener('touchstart', (e) => {
         let initialX = e.touches[0].clientX;
         let initialY = e.touches[0].clientY;
@@ -111,7 +107,7 @@ window.addEventListener('load', function () {
             let changeX = initialX + e2.touches[0].clientX;
             console.log(changeX);
             let changeY = initialY - e2.touches[0].clientY;
-            changeAngle2((changeX),(-changeY));
+            changeAngle2((changeX), (-changeY));
         }
     })
 
