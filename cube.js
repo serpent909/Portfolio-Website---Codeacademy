@@ -16,6 +16,7 @@ window.addEventListener('load', function () {
     let currentPos = posFront;
 
     const changePosition = () => {
+        cubeContainer.style.transition = '5s'
 
         const randomPos = Math.floor(Math.random() * 6);
         switch (randomPos) {
@@ -23,59 +24,62 @@ window.addEventListener('load', function () {
                 if (currentPos === posBot) {
                     changePosition();
                 }
-                cubeFaces.style.transform = posBot;
+                cubeContainer.style.transform = posBot;
                 currentPos = posBot;
                 break;
             case 1:
                 if (currentPos === posTop) {
                     changePosition();
                 }
-                cubeFaces.style.transform = posTop;
+                cubeContainer.style.transform = posTop;
                 currentPos = posTop;
                 break;
             case 2:
                 if (currentPos === posFront) {
                     changePosition();
                 }
-                cubeFaces.style.transform = posFront;
+                cubeContainer.style.transform = posFront;
                 currentPos = posFront;
                 break;
             case 3:
                 if (currentPos === posBack) {
                     changePosition();
                 }
-                cubeFaces.style.transform = posBack;
+                cubeContainer.style.transform = posBack;
                 currentPos = posBack;
                 break;
             case 4:
                 if (currentPos === posLeft) {
                     changePosition();
                 }
-                cubeFaces.style.transform = posLeft;
+                cubeContainer.style.transform = posLeft;
                 currentPos = posLeft;
                 break;
             case 5:
                 if (currentPos === posRight) {
                     changePosition();
                 }
-                cubeFaces.style.transform = posRight;
+                cubeContainer.style.transform = posRight;
                 currentPos = posRight;
                 break;
         }
+        
     }
 
     const changeAngle = () => {
+        cubeContainer.style.transition = '5s'
         let rotateX = Math.floor(Math.random() * 360);
         let rotateY = Math.floor(Math.random() * 360);
         let rotateZ = Math.floor(Math.random() * 360);
-        cubeFaces.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        cubeContainer.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) rotateZ(${rotateZ}deg)`;
     }
 
 
     const changeAngle2 = (x, y) => {
         let rotateY = x;
         let rotateX = y;
-        let rotateZ = x/y;
+        let rotateZ = x/-y;
+        cubeContainer.style.transition = 'none';
         cubeContainer.style.transform = `rotateX(${-rotateX}deg) rotateY(${rotateY}deg)`;
 
     }
@@ -84,11 +88,14 @@ window.addEventListener('load', function () {
     document.querySelector('body').addEventListener('mousedown', (event) => {
         let initialX = event.clientX;
         let initialY = event.clientY;
+        console.log(initialX, initialY);
 
 
         this.document.onmousemove = (event) => {
-            let changeX = initialX + event.clientX;
+            let changeX = initialX - event.clientX;
+           
             let changeY = initialY - event.clientY;
+            console.log(changeX, changeY)
             changeAngle2((changeX), (-changeY));
         }
     })
