@@ -92,7 +92,7 @@ window.addEventListener('load', function () {
 
 
         this.document.onmousemove = (event) => {
-            let changeX = initialX - event.clientX;
+            let changeX = event.clientX - initialX;
            
             let changeY = initialY - event.clientY;
             console.log(changeX, changeY)
