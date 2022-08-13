@@ -4,6 +4,7 @@
 
 .cube-perspective {
     perspective: 500px;
+    touch-action: none;
 
 }
 

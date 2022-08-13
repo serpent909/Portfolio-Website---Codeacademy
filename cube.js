@@ -96,6 +96,30 @@ window.addEventListener('load', function () {
         this.document.onmousemove = null;
     });
 
+
+
+
+
+
+
+    document.querySelector('body').addEventListener('touchstart', (e) => {
+        let initialX = e.touches[0].clientX;
+        let initialY = e.touches[0].clientY;
+
+
+        this.document.ontouchmove = (e2) => {
+            let changeX = initialX + e2.touches[0].clientX;
+            console.log(changeX);
+            let changeY = initialY - e2.touches[0].clientY;
+            changeAngle2((changeX),(-changeY));
+        }
+    })
+
+    document.addEventListener('touchend', (event) => {
+        this.document.ontouchmove = null;
+    });
+
+
     randomFace.addEventListener('click', changePosition);
     randomAngle.addEventListener('click', changeAngle);
 
